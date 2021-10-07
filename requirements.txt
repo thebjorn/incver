@@ -1,0 +1,3 @@
+dkpkg>=2.0.2
+dkfileutils
+iniconfig

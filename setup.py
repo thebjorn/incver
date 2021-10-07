@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""upversion - update version numbers
+"""incver - update version numbers
 """
 import sys
 from setuptools import setup, find_packages
@@ -18,19 +18,19 @@ version = '0.0.1'
 
 
 setup(
-    name='upversion',
+    name='incver',
     version=version,
     install_requires=[
     ],
     author='Bjorn Pettersen',
     author_email='bp@datakortet.no',
-    url='https://github.com/thebjorn/upversion',
+    url='https://github.com/thebjorn/incver',
     description=__doc__.strip(),
     classifiers=[line for line in classifiers.split('\n') if line],
     long_description=open('README.rst').read(),
     entry_points={
         'console_scripts': [
-            'upversion = upversion.upversion:upversion_cmd',
+            'incver = incver.incver:incver_cmd',
         ]
     },
     packages=find_packages(exclude=['tests']),
